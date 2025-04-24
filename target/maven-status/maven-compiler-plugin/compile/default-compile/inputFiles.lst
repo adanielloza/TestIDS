@@ -2,3 +2,4 @@
 /Users/andresloza/BioNetFileIntegration1/src/main/java/com/bionetttt/SchemaRunner.java
 /Users/andresloza/BioNetFileIntegration1/src/main/java/com/bionetttt/routes/DatabaseIngestionRoute.java
 /Users/andresloza/BioNetFileIntegration1/src/main/java/com/bionetttt/routes/FileTransferRoute.java
+/Users/andresloza/BioNetFileIntegration1/src/main/java/com/bionetttt/routes/SchemaRoute.java

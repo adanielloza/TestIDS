@@ -19,13 +19,19 @@ CREATE TABLE IF NOT EXISTS log_cambios_resultados (
 CREATE TRIGGER IF NOT EXISTS trg_log_insert
 AFTER INSERT ON resultados_examenes
 BEGIN
-  INSERT INTO log_cambios_resultados(operacion,paciente_id,tipo_examen,fecha)
-  VALUES('INSERT', NEW.paciente_id, NEW.tipo_examen, datetime('now'));
+  INSERT INTO log_cambios_resultados(
+    operacion,paciente_id,tipo_examen,fecha
+  ) VALUES(
+    'INSERT', NEW.paciente_id, NEW.tipo_examen, datetime('now')
+  );
 END;
 
 CREATE TRIGGER IF NOT EXISTS trg_log_update
 AFTER UPDATE ON resultados_examenes
 BEGIN
-  INSERT INTO log_cambios_resultados(operacion,paciente_id,tipo_examen,fecha)
-  VALUES('UPDATE', NEW.paciente_id, NEW.tipo_examen, datetime('now'));
+  INSERT INTO log_cambios_resultados(
+    operacion,paciente_id,tipo_examen,fecha
+  ) VALUES(
+    'UPDATE', NEW.paciente_id, NEW.tipo_examen, datetime('now')
+  );
 END;
