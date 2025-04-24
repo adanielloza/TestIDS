@@ -1,0 +1,4 @@
+com/bionetttt/routes/FileTransferRoute.class
+com/bionetttt/routes/DatabaseIngestionRoute.class
+com/bionetttt/SchemaRunner.class
+com/bionetttt/MainApp.class
